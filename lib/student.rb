@@ -29,5 +29,7 @@ class Student
     DB[:conn].execute("DROP TABLE IF EXISTS students")
   end
 
+  
+
 
 end
