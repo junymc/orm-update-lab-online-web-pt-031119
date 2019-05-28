@@ -55,7 +55,7 @@ class Student
     self.new(id, name, grade)
   end
 
-  def self.find_by_name
+  def self.find_by_name(row)
     sql = "SELECT * FROM students WHERE name = ?"
     DB[:conn].execute(sql, name).map do |row|
       new_from_db.first
