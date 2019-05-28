@@ -22,7 +22,7 @@ class Student
       );
     SQL
 
-    DB[:conn].execute(sql, name, grade)
+    DB[:conn].execute(sql, name)
   end
 
 
